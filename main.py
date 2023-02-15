@@ -34,7 +34,7 @@ class MainWindow(QMainWindow):
 		self.bOutput = QPushButton("Selecionar una carpeta de salida");self.bOutput.setFixedSize(250,50);self.bOutput.setStyleSheet(self.buton_sytle)
 		self.folderSelected = QLabel("Carpeta de Salida seleccionada:")
 		self.bCompress = QPushButton("Comprimir!");self.bCompress.setFixedSize(150,50);compress_layout = QVBoxLayout(); compress_layout.addWidget(self.bCompress); compress_layout.setAlignment(Qt.AlignCenter); self.bCompress.setStyleSheet(self.buton_sytle)
-		footer = QLabel('<a href="https://www.instagram.com/augusto_silva.py/">AugustoSilva</a>');footer.setOpenExternalLinks(True);footer.setAlignment(Qt.AlignCenter); footer.setStyleSheet('background-color:#181823;color:#fff; font-size:20px;')
+		footer = QLabel('''Diseñado por <a href="https://www.instagram.com/augusto_silva.py/">AugustoSilva</a>''');footer.setOpenExternalLinks(True);footer.setAlignment(Qt.AlignCenter); footer.setStyleSheet('background-color:#181823;color:#fff; font-size:20px;')
 
 		def handleLinkClick(url):
 			QDesktopServices.openUrl(QUrl(url))
